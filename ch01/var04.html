@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="box1">
+        <h1>나타남</h1>
+    </div>
+    <button onclick="show()">보이기</button>
+    <button onclick="hide()">숨기기</button>
+    <script>
+        // function myHml(){
+        //     document.querySelector("#box1").innerHTML="Hello";
+        // }
+
+        function hide() {
+            //jquery를 받으면 문법이 좀 달라짐
+            $("#box1").hide();
+        }
+
+        function show() {
+            //jquery를 받으면 문법이 좀 달라짐
+            $("#box1").show();
+        }
+    </script>
+</body>
+
+</html>

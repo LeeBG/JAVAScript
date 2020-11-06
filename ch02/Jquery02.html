@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <p>안녕!! 날 클릭해 !</p>
+    <!--클릭했을 때 함수가 호출-->
+    <script>
+        //click 함수에 인수에는 함수가 들어가야함
+        $("p").click(function() {
+            //alert("클릭됨");
+        }); //누군가가 p클릭을 바라본다(누군가가 건드리는지 아닌지)
+        //listener 어떠한 이벤트 발생시 내부 호출
+
+        $("p").dblclick(function() { //운영체제가 콜백에 주는것
+            //alert("두번클릭됨");
+        });
+
+        $("p").mouseenter(function() {
+            alert("마우스 올려짐");
+        });
+    </script>
+</body>
+
+</html>

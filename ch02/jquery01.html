@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery 예제1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div {
+            border: 1px solid black;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //java script는 함수도 변수처럼 사용가능 매개변수자리에 함수 가능
+        //ready에 인수에는 실행될 함수가 들어가야 함.
+
+        $(document).ready(function() {
+            alert("그림이 다 그려짐")
+        });
+
+
+
+        // var test = function() {
+        //     alert("test");
+        // }
+        // $(document).ready(test);
+
+
+        // function add(a) { //함수에는 매개변수가 있고
+        //     a();
+        // }
+
+        // function a() {
+        //     alert("안녕");
+        // }
+
+        // add(a); //인수를 넣어서 결과를 실행
+        // //ready함수는 그림이 다 그려지면 실행
+        // $(document).ready( /*function*/ );
+    </script>
+    <div class="box1"></div>
+    <div id="box2"></div>
+    <button onclick="show()">보이기</button>
+    <button onclick="hide()">숨기기</button>
+
+    <script>
+        // 선택자 .(점:class) #(샵:id) div(태그명)
+        $(".box1").hide(); //class
+        $("#box2").hide(); //id
+
+        function show() {
+            $("div").show();
+        }
+
+        function hide() {
+            $("div").hide();
+        }
+    </script>
+</body>
+
+</html>
