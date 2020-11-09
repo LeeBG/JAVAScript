@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>text(),html(),val()</h1>
+    <hr/>
+    <div id="text1">
+        <h1>텍스트 공간</h1>
+    </div>
+    <div id="html1">HTML공간</div>
+    <input type="text" value="love" id="input1" readonly />
+    <button onclick="change3()">Input 값 변경</button>
+    <button onclick="change1()">텍스트 공간 변경</button>
+    <button onclick="change2()">HTML 공간 변경</button>
+
+
+    <script>
+        function change1() {
+            //set
+            $("#text1").text("<b>텍스트 내용 변경</b>");
+
+            //get
+            console.log($("#text1").text());
+        }
+
+        function change2() {
+            //set
+            $("#html1").html("<b>HTML 내용 변경</b>");
+
+            //get
+            console.log($("#html1").html());
+        }
+
+        function change3() {
+            //set
+            $("#input1").val("부산 진구 중앙대로");
+
+            //get
+            console.log($("#input1").val());
+        }
+        //디자인까지 적용하고 싶으면 html
+        //아니면 .text
+    </script>
+</body>
+
+</html>

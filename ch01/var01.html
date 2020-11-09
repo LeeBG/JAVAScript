@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <title>add Example</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
-        .number{
+        .number {
             font-size: 50px;
         }
     </style>
 </head>
+
 <body>
 
     <h1>자바 스크립트 예제 1</h1>
@@ -25,17 +27,18 @@
         var num = 1;
         console.log(num);
 
-        function add(){ //지금 시작하지마!!!(이런 함수가 있구나 이름만 메모리에저장하고 넘어감)
-            num = num+1;
+        function add() { //지금 시작하지마!!!(이런 함수가 있구나 이름만 메모리에저장하고 넘어감)
+            num = num + 1;
             console.log(num);
             var numberBox = document.querySelector("#numberBox");
             console.log(numberBox);
 
-            numberBox.innerHTML= num;
+            numberBox.innerHTML = num;
         }
     </script>
 </body>
+
 </html>
 <!--자바스크립트의 위치는 프로그램 실행에 심각한 오류를 주지 않는다-->
-<!-- 하지만 인터프리터 언어이기 때문에 먼저해석되면 문제야기할 수 있다. 
+<!-- 하지만 인터프리터 언어이기 때문에 먼저해석되면 문제를 야기할 수 있다. 
     바디의 제일 마지막 부분에 사용하는 것을 권장한다.-->
