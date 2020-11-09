@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>util</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jquery CSS</h1>
+    <hr/>
+    <h3>addClass</h3>
+    <button onclick="changeBlue()">addClass</button>
+    <button onclick="removeBlue()">RemoveClass</button>
+    <button onclick="changeCss()">changeCss</button>
+    <div class="blue">첫 번째 디자인</div>
+    <div id="d2">두 번째 디자인</div>
+
+    <script>
+        function changeBlue() {
+            $("#d2").addClass("blue");
+        }
+
+        function removeBlue() {
+            $("div").removeClass("blue");
+        }
+
+        function changeCss() {
+            $("div").css("background-color", "yellow");
+        }
+        //클래스가 없어도 동적으로 처리 가능
+    </script>
+</body>
+
+</html>

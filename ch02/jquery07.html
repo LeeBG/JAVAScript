@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #comment-list {
+            border: 5px solid black;
+            padding: 10px;
+        }
+        
+        #comment-list>div {
+            border: 2px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="comment-list">
+        <div id="item-1">댓글1</div>
+        <div id="item-2">댓글2</div>
+    </div>
+    <hr/>
+    <input type="text" id="input-comment" />
+    <button onclick="addComment()">댓글 추가</button>
+
+    <script>
+        //append,prepend, after, before 네가지 구분
+        //append : 추가한다 // 내부 항상 ~뒤에 추가됨
+        //prepend : 추가한다 // 내부 항상 ~앞에 추가됨(최근의 내용이 위로)
+        //after : 외부
+        //before : 외부
+        function addComment() {
+            var comment = $("#input-comment").val();
+            //set
+            $("#comment-list").after("<div>" + comment + "</div>");
+        }
+    </script>
+</body>
+
+</html>

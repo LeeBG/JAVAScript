@@ -51,11 +51,10 @@
                 title: "도굴",
                 rating: 9.1
             };
-
             //set
             $("#movie-poster").attr("src", movie.poster);
-            $("#title").html(movie.title);
-            $("#rating").text(movie.rating);
+            $("#title").html("<h3>" + movie.title + "<h3>");
+            $("#rating").html("<h3>" + movie.rating + "<h3>");
 
         }
     </script>
