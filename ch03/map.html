@@ -1,0 +1,68 @@
+<!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1604977378588" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+
+
+<!-- 3. 실행 스크립트 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand text--danger" href="index.html">블로그</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="join.html">회원가입</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">로그인</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="map.html">오시는 길</a>
+                </li>
+            </ul>
+            <!--mx-auto  == margin 0 auto 와 같다.-->
+            <!--ml-auto  == margin 왼쪽 auto 와 같다.-->
+            <!--mr-auto  == margin 오른쪽 auto 와 같다.-->
+            <!--my_auto-->
+            <form class="form-inline ml-auto" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <br>
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp": "1604977613809",
+            "key": "22v3u",
+            "mapWidth": "640",
+            "mapHeight": "360"
+        }).render();
+    </script>
+</body>
+
+</html>
